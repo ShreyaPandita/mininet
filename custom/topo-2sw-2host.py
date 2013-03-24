@@ -31,5 +31,6 @@ class MyTopo( Topo ):
         self.addLink( leftSwitch, downSwitch )
         self.addLink( downSwitch, downHost )
 	self.addLink( leftSwitch, rightHost )
+	self.addLink( downSwitch, rightHOst )
 
 topos = { 'mytopo': ( lambda: MyTopo() ) }
